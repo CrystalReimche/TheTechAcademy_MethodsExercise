@@ -1,0 +1,7 @@
+E:\Coding\Visual Studio\Projects\The Tech Academy\MethodsExercise\MethodsExercise\obj\Debug\MethodsExercise.csprojResolveAssemblyReference.cache
+E:\Coding\Visual Studio\Projects\The Tech Academy\MethodsExercise\MethodsExercise\obj\Debug\MethodsExercise.csproj.CoreCompileInputs.cache
+E:\Coding\Visual Studio\Projects\The Tech Academy\MethodsExercise\MethodsExercise\bin\Debug\MethodsExercise.exe.config
+E:\Coding\Visual Studio\Projects\The Tech Academy\MethodsExercise\MethodsExercise\bin\Debug\MethodsExercise.exe
+E:\Coding\Visual Studio\Projects\The Tech Academy\MethodsExercise\MethodsExercise\bin\Debug\MethodsExercise.pdb
+E:\Coding\Visual Studio\Projects\The Tech Academy\MethodsExercise\MethodsExercise\obj\Debug\MethodsExercise.exe
+E:\Coding\Visual Studio\Projects\The Tech Academy\MethodsExercise\MethodsExercise\obj\Debug\MethodsExercise.pdb
