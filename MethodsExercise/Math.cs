@@ -11,10 +11,9 @@ namespace MethodsExercise
     {
         public int AddTwoNumbers(string userInput)
         {
-            int num1;
             int num2 = RandomNumber();
             int result;
-            if (int.TryParse(userInput.ToString(), out num1))
+            if (int.TryParse(userInput.ToString(), out int num1))
             {
                 result = num1 + num2;
                 Console.WriteLine("Adding your number and a random number, please wait...");
@@ -29,20 +28,34 @@ namespace MethodsExercise
 
         public int MultiplyTwoNumbers(string num1)
         {
-            int result = int.Parse(num1) * RandomNumber();
-            Console.WriteLine("Multiplying your number and a random number, please wait...");
-            Thread.Sleep(1000);
-            Console.WriteLine("{0} * {1} = {2}", num1, RandomNumber(), result);
+            int num2 = RandomNumber();
+            int result;
+            if (int.TryParse(num1.ToString(), out int num))
+            {
+                result = num * num2;
+                Console.WriteLine("Multiplying your number and a random number, please wait...");
+                Thread.Sleep(1000);
+                Console.WriteLine("{0} * {1} = {2}", num, num2, result);
+            }
+            else
+                throw new FormatException("There was a problem!");
 
             return result;
         }
 
-        public int DivideTwoNumbers(string num1)
+        public double DivideTwoNumbers(string num1)
         {
-            int result = int.Parse(num1) / RandomNumber();
-            Console.WriteLine("Dividing your number and a random number, please wait...");
-            Thread.Sleep(1000);
-            Console.WriteLine("{0} / {1} = {2}", num1, RandomNumber(), result);
+            double num2 = RandomNumber();
+            double result;
+            if (double.TryParse(num1.ToString(), out double num))
+            {
+                result = num / num2;
+                Console.WriteLine("Dividing your number and a random number, please wait...");
+                Thread.Sleep(1000);
+                Console.WriteLine("{0} / {1} = {2:F2}", num, num2, result);
+            }
+            else
+                throw new FormatException("There was a problem!");
 
             return result;
         }
@@ -51,7 +64,7 @@ namespace MethodsExercise
         {
             Random random = new Random();
 
-            int randNum = random.Next(0, 1001);
+            int randNum = random.Next(2, 102);
 
             return randNum;
         }
